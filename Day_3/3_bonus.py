@@ -14,14 +14,16 @@ if height >= 120:
         bill = 12
         print("You paid $12 for entry")
     
-    photo = input("Do you want a photo of your ride? Y for yes or N for no ")
+    photo = input("Do you want a photo of your ride? Y for yes or N for no: ")
     
-    if photo == "Y" or "y":
+    if photo == "Y":
         bill += 3
         print(f"Your final bill is ${bill}")
-
-    else:
+    elif photo == "y":
+        bill += 3
         print(f"Your final bill is ${bill}")
+    else:
+        print(f"Your final bill without photo is ${bill}")
 
     
 else:
