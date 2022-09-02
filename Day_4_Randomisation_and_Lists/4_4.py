@@ -55,8 +55,6 @@ elif computer_choice == paper:
 elif computer_choice == scissors:
     print(scissors)
 
-
-
 if user_choice == computer_choice:
     print("This game is tie!")
 elif(user_choice == "0" and computer_choice == scissors):
