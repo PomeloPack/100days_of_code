@@ -27,12 +27,6 @@ scissors = '''
 ---.__(___)
 '''
 
-"""
-0 = rock
-1 = paper
-2 = scissors
-"""
-
 user_choice = input("What do you choose?\n\nType:\n\n0 for rock\n\n1 for Paper\n\n2 for Scissors\n\nChoose here: ")
 
 if user_choice == "0":
@@ -46,6 +40,7 @@ else:
 
 print("Computer choose: ")
 
+# also we can use computer_choice = random.randint(0, 2) and switch variable names to int
 computer_choice = random.choice([rock, paper, scissors])
 
 if computer_choice == rock:
